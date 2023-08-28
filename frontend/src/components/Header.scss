@@ -1,0 +1,43 @@
+@import '../styles.scss';
+
+.HeaderContainer {
+
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+    .internal {
+        max-width: 1040px;
+        
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+
+
+        .Logo {
+            font-size: large;
+            padding: 1rem;
+            font-weight: bold;
+        }
+
+        .Filler {
+            flex-grow: 1;
+        }
+
+        .Menu {
+            display: flex;
+
+            .MenuItem {
+                font-weight: 500;
+                padding: 1rem;
+                color: $menu-item-color;
+
+                &.CTA{
+                    color:#fff;
+                    border-color: $login-button-bg-color;
+                    border-radius: 10px;
+                    background: $login-button-bg-color;
+                }
+            }
+        }
+
+    }
+}

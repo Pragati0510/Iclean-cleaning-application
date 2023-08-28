@@ -1,0 +1,191 @@
+@import '../styles.scss';
+
+.main-container{
+    padding-right: 1rem;
+
+    .MessageBox{
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: rgba($color: #ff0000, $alpha: 0.10);
+        
+        .ResolvePrompt{
+            .ResolveButton{
+                display: inline-block;
+                text-decoration: underline;
+                cursor: pointer;
+            
+            }
+        }
+
+        &.Login{
+           
+            cursor: pointer;
+
+            &:hover{
+                color:$primary-color;
+            }
+        }
+
+    }
+    .IssueBlock{
+        .TitleBlock{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            .Title{
+                font-size: 32px;
+                span{
+                    color:green;
+                }
+            }
+            .SubTitle{
+                font-size: 12px;
+                margin-bottom: 0.25rem;
+                font-weight: 300;
+                .UpdatePostButton{
+                    color: $primary-color;
+                    cursor: pointer;
+                .UserChecker{
+                    display: inline;
+                    
+                }}
+            }
+            .Description{
+                font-size: 14px;
+                width: 80%;
+            }
+        }
+
+        .ImgContainer{
+            min-width: 600px;
+            
+            img{
+                min-width: 100%;
+
+            }
+        }
+
+        
+    
+    }
+  
+
+    .Line{
+        margin-top: 1.5rem;
+        display: block;
+        border-top: 1px solid $grey-color;
+    }
+   
+
+    .Comments{
+        margin-top: 1rem;
+       
+        
+        .CommentForm{
+            display: flex;
+
+            .SubmitComment{
+                display: flex;
+                justify-content: center;
+                max-width: 5rem;
+                margin: 0rem 1rem 0rem 1rem;
+                cursor: pointer;
+                &:Hover{
+                    background-color: $primary-color;
+                    color:#fff;
+                }
+            }
+        }
+
+        .CommentContainer{
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+
+            border: unset;
+        border-radius: 4px;
+        outline-color: rgb(84 105 212 / 0.5);
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+            .UserChecker{
+                color:$primary-color;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .Top{
+                align-items: center;
+                justify-content: flex-start;
+                display: flex;
+                padding: 10px;
+            
+                .ProfilePic{
+                  
+                  // display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  max-width: 32px;
+                  max-height: 32px;
+                  margin-right: 0.5rem;
+                  img{
+                    max-width: 100%;
+                    max-height: 100%;
+                  }
+                }
+                .TextContainer{
+                  display: flex;
+                  flex-direction: column;
+                  .IssueTitle{
+                    font-size: 14px;
+                    font-weight: 500;
+                  }
+                  .IssueLoc{
+                    font-size: 12px;
+                    font-weight: 300;
+                  }
+                }
+              }
+           
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        
+
+            .CommentText{
+              padding:0px 10px 5px 10px;
+              font-size: 14px;
+            }
+
+            
+
+
+        }
+
+    }
+
+
+    input {
+        line-height: 28px;
+        padding: 8px 16px;
+        width: 100%;
+        min-height: 44px;
+        border: unset;
+        border-radius: 4px;
+        outline-color: rgb(84 105 212 / 0.5);
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    }  
+
+
+}

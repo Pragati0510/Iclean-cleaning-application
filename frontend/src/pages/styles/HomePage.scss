@@ -1,0 +1,44 @@
+@import "../../styles.scss";
+
+.HomePage {
+  .TopBar {
+    display: flex;
+    // position: sticky;
+    // top: 0;
+    .Filler {
+      flex-grow: 2;
+    }
+
+    .PostButton {
+      padding: 10px;
+      background-color: $primary-color;
+      border-radius: 10px;
+      color: #fff;
+    }
+
+    .FilterContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .FilterButton {
+        padding: 7px;
+        font-size: 10pt;
+        cursor: pointer;
+        margin-right: 10px;
+        border-radius: 30px;
+        border: 1px solid $primary-color;
+
+        &.Active {
+          border: 1px solid #fff;
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .IssuesContainer {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

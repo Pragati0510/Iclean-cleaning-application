@@ -1,0 +1,97 @@
+@import "../styles.scss";
+
+.FormContainer {
+  margin-top: 2rem;
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  .MainForm {
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
+      rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $form-bg-color;
+    row-gap: 0.5rem;
+    .FormTitle {
+      font-size: 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .FormDescription {
+      font-size: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .Filler{
+        flex-grow: 2;
+    }
+    label {
+      margin-bottom: 0px;
+    }
+    input {
+      line-height: 28px;
+      padding: 8px 16px;
+      width: 100%;
+      min-height: 44px;
+      border: unset;
+      border-radius: 4px;
+      outline-color: rgb(84 105 212 / 0.5);
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+
+      &[type="submit"] {
+        background-color: $primary-color;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+          rgb(84, 105, 212) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      &[type='file']{
+       width: 70%;
+        margin-right: 2rem;
+      }
+    
+    }
+
+    .FileStuff{
+       display: flex;
+       justify-content: flex-start;
+
+    }
+
+
+    .UploadButton{
+        
+        color:$primary-color;
+        min-height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+       
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+          rgb(84, 105, 212) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+      
+        font-weight: 600;
+        cursor: pointer;
+
+    }
+  }
+}

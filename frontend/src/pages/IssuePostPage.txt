@@ -1,0 +1,53 @@
+import React, { useState, useReducer } from "react";
+import "./IssuePostPage.scss";
+
+
+const IssuePostPage = ({ update }) => {
+  const [submitting, setSubmitting] = useState(false);
+  const [description , setDesc] = useState('');
+  const [title , setTitle] = useState('');
+  const [location , setLocation] = useState('');
+  const [imgurl , setImgUrl] = useState('');
+  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.value);
+    setSubmitting(true);
+    setTimeout(() => {
+      setSubmitting(false);
+    }, 3000)
+  };
+
+  return (
+    <div>
+        {submitting &&
+       <div>Submtting Form...</div>
+     }
+      <form
+        onSubmit={(e) => {
+          handleSubmit(e);
+        }}
+      >
+        <br />
+        <input type="text" id="title" name="title" />
+        <br />
+
+        <br />
+        <input type="text" id="title" name="title" />
+        <br />
+
+        <select id="area" name="area">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <input type="submit" value="Submit" />
+        <br />
+      </form>
+    </div>
+  );
+};
+
+export default IssuePostPage;

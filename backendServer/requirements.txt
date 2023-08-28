@@ -1,0 +1,5 @@
+Django==4.1.1
+djangorestframework==3.14.0
+sendgrid==6.9.7
+django-cors-headers==3.13.0
+virtualenv==20.16.5

@@ -1,0 +1,64 @@
+@import "../../styles.scss";
+
+.SideBarContainer {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eee;
+  height: 100vh;
+  padding-right: 2rem;
+  width: 200px;
+
+  .LoginChecker{
+    margin-bottom: 0.5rem;
+  }
+  .Line{
+    // margin-top: 1.5rem;
+    display: block;
+    border-top: 1px solid $grey-color;
+    
+  }
+
+  .SidebarItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+
+    
+    &.LoggedIn{
+     background-color: rgba($color: #00ff00, $alpha: 0.1);
+     border-radius: 20px;
+ 
+    }
+
+    &a{
+        display: block;
+        width: 100%;
+    }
+    
+    &:hover:not(.Logo):not(.LoggedIn){
+        background-color: $light-grey-color;
+        border-radius: 20px;
+    }
+
+
+    .AuthButton{
+        cursor: pointer;
+        width: 100%;
+
+      }
+
+    &.Logo {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+      
+
+      & span {
+        color: $primary-color;
+      }
+    }
+  }
+}

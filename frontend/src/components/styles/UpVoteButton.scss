@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+.UpvoteContainer{
+    display: flex;
+    align-items: baseline;
+    .UpVoteButton {
+        padding-right: 0.3rem;
+    
+        & :hover{
+            color:$primary-color;
+            ;
+        }
+    
+    }
+
+
+}
