@@ -14,9 +14,9 @@ const checkProfile = async (userId) => {
           });
         let status = await response.status;
         console.log(status);
-        if (status == 404){
+        if (status === 404){
           return false; }
-        else if (status == 200) {
+        else if (status === 200) {
         let data = await response.json();
         return data;
         
