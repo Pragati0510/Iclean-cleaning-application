@@ -26,4 +26,4 @@ jobs:
         working-directory: frontend
         run: |
          npm install
-         npm run build -- --include-path=./src
+         npm run build --no-warnings -- --include-path=./src
