@@ -16,7 +16,7 @@ jobs:
       - name: Install Python Dependencies
         working-directory: backendServer
         run: |
-          pip install -r requirements.txt 
+          pip install -r requirements.txt  
 
       - name: Run Django Tests
         working-directory: backendServer
@@ -25,5 +25,5 @@ jobs:
       - name: Build React App
         working-directory: frontend
         run: |
-          npm install
-          npm run build
+         npm install
+         npm run build -- --include-path=./src
