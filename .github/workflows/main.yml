@@ -1,0 +1,27 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - mybranch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Python Dependencies
+        run: |
+          pip install -r 
+
+      - name: Run Django Tests
+        run: |
+          python manage.py test
+      - name: Build React App
+        working-directory: frontend
+        run: |
+          npm install
+          npm run build
